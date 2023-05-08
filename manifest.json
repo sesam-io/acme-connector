@@ -1,0 +1,10 @@
+{
+    "additional_parameters": {
+    },
+    "auth": "api_key",
+    "datatypes": {
+        "human": {
+            "template": "templates/human.json"
+        }
+    }
+}

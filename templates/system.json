@@ -1,0 +1,45 @@
+[
+    {
+        "_id": "{{@ system @}}-ms",
+        "type": "system:microservice",
+        "docker": {
+            "image": "datanav/mock-rest-api:latest",
+            "port": 6000
+        }
+    },
+    {
+        "_id": "{{@ system @}}",
+        "type": "system:rest",
+        "metadata": {
+            "tags": ["mock-rest"]
+        },
+        "operations": {
+            "human-collect": {
+                "id_expression": "{{ entity.id }}",
+                "method": "GET",
+                "url": "objects/human"
+            },
+            "human-delete": {
+                "method": "DELETE",
+                "payload-type": "json",
+                "url": "objects/human/{{ entity.id }}"
+            },
+            "human-insert": {
+                "method": "POST",
+                "payload-type": "json",
+                "url": "objects/human"
+            },
+            "human-lookup": {
+                "method": "GET",
+                "url": "objects/human/{{ entity.id }}"
+            },
+            "human-update": {
+                "method": "PUT",
+                "payload-type": "json",
+                "url": "objects/human/{{ entity.id }}"
+            }
+        },
+        "url_pattern": "http://{{@ system @}}-ms:6000/%s",
+        "verify_ssl": false
+    }
+]
