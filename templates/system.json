@@ -3,9 +3,10 @@
         "_id": "{{@ system @}}-ms",
         "type": "system:microservice",
         "docker": {
-            "image": "datanav/mock-rest-api:latest",
+            "image": "grove/mock-rest-api:latest",
             "port": 6000
-        }
+        },
+        "eager_load": true
     },
     {
         "_id": "{{@ system @}}",

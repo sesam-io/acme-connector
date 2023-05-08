@@ -6,5 +6,6 @@
         "human": {
             "template": "templates/human.json"
         }
-    }
+    },
+    "system-template": "templates/system.json"
 }
