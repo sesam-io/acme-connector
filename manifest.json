@@ -1,7 +1,7 @@
 {
     "additional_parameters": {
     },
-    "auth": "api_key",
+    "auth": "open",
     "datatypes": {
         "human": {
             "template": "templates/human.json"
