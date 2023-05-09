@@ -3,7 +3,7 @@
         "_id": "{{@ system @}}-ms",
         "type": "system:microservice",
         "docker": {
-            "image": "grove/mock-rest-api:latest",
+            "image": "sesam/mock-rest-api:latest",
             "port": 6000
         },
         "eager_load": true
