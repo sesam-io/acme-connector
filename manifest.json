@@ -3,7 +3,37 @@
     },
     "auth": "open",
     "datatypes": {
+        "accounting": {
+            "template": "templates/human.json"
+        },
+        "agreement": {
+            "template": "templates/human.json"
+        },
+        "asset": {
+            "template": "templates/human.json"
+        },
+        "classification": {
+            "template": "templates/human.json"
+        },
+        "documentation": {
+            "template": "templates/human.json"
+        },
+        "event": {
+            "template": "templates/human.json"
+        },
         "human": {
+            "template": "templates/human.json"
+        },
+        "location": {
+            "template": "templates/human.json"
+        },
+        "organisation": {
+            "template": "templates/human.json"
+        },
+        "product": {
+            "template": "templates/human.json"
+        },
+        "task": {
             "template": "templates/human.json"
         }
     },
